@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 #include<locale.h>
+#include <windows.h>
 
 //Função pra desenhar as extremidades do menu.
 void desenhaLinha(int largura) {
@@ -54,6 +55,7 @@ void telalogin() {
         desenhaLinha(30);
         wprintf(L"PARABÉNS VOCÊ ACESSOU O SISTEMA!\n");
         desenhaLinha(30);
+        Sleep(3000);
         exit(0);
     }else { //se a senha não bater
         wprintf(L"\nUsuário ou senha incorretos.\n");
@@ -228,6 +230,7 @@ int main () {
         
         case 5:
              printf("Saindo...\n");
+             Sleep(3000);
              break;
 
         default:
